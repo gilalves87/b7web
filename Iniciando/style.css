@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.teste{
+	width:740px;
+	height: 300px;
+	background-color: lightgreen;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 500px){
+	.teste{
+		width: 200px;
+	}
+}
+
+#iframe1{
+	display: none;
+}
+#iframe2{
+	display: none;
+}
+.container{
+	background-color: #eee;
+	text-align: center;
+	width: 500px;
+	height: 400px;
+	margin: auto;
+	padding: 50px;
+	box-sizing: border-box;
+}
+.botao{
+	padding: 10px;
+	background-color: #ccc;
+	color: #fff;
+}
+.botao:hover{
+	background-color: #eee;
+	color: blue;
+}
+.alinhado_ao_centro{
+	width:50%;
+	height:50px;
+	margin:auto;
+	background-color:black;
+	color:white;
+}
