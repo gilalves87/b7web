@@ -1,0 +1,24 @@
+body {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+}
+.teste {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 5px;
+}
+
+/* .teste:hover {
+    background-color: lightgreen;
+    width: 220px;
+    height: 220px;
+    transition: 0.4s;
+} */
+
+.teste:active {
+    background-color: red;
+    width: 400px;
+    height: 400px;
+    transition: 0.4s;
+}

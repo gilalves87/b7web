@@ -1,83 +1,133 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    letter-spacing: 1px;
+}
+
+/* Importar Fontes de arquivos externos */
+/* @font-face {
+    font-family: Bodega;
+    src: url('../fonts/Bodega Script/OTF/Bodega Script.otf');
+} */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #96b1d1;
+    font-family: 'Berkshire Swash';
+    font-size: 14px;
+    background-image: url('../img/fundo2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    max-width: 800px;
+    padding: 10px;
 }
 
 header {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* background-color: #e0cca2; */
 }
 
-.container {
-    display: flex;
-    justify-content: space-around;
-    padding: 5px;
-    width: 100%;
+.foto img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    box-shadow: 4px 4px 4px #FFFFFF;
 }
 
-.menu {
-    display: flex;
-    height: auto;
-    
-}
-
-nav ul, 
-nav li, a {
-    display: flex;
-    text-decoration: none;
-    list-style: none;
-    color: black;
+.foto,
+.descricao-foto {
+    text-align: center;
     padding: 10px;
-    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.descricao-foto {
+    background-color: rgba(163, 123, 83, 0.5);
+    font-size: 16px;
+    text-align: justify;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 a:hover {
-    background-color: #CCCCCC;
-    color: #FFFFFF;
+    text-decoration: underline;
 }
 
-.container-section {
+.obs {
+    text-align: justify;
+    padding: 10px;
+    font-size: 8px;
+    /* background-color: #96b1d1; */
+    /* background-image: url(../img/livro.jpg); */
+    /* background-size: cover; */
+    /* border: 1px solid grey; */
+    color: #FFFFFF;
+    margin: 10px;
+    border-radius: 5px;
+    /* font-weight: bold; */
+    transition: 0.4s;
+    /* font-family: Bodega; */
+    opacity: 0.5;
+}
+
+.obs:hover {
+    font-size: 16px;
+    background-color: rgba(163, 123, 83, 0.5);
+    opacity: 1;
+}
+
+section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color:#b3926c;
-    padding: 10px;
-}
-
-.foto, .descricao-foto {
-    text-align: center;
-    background-color: brown;
-    padding: 10px;
-    height: auto;
-    width: auto;
-    color: #FFFFFF;
+    padding: 30px 10px;
+    /* background-color: #e0cca2; */
 }
 
 .time-line {
     display: flex;
-    justify-content: space-around;
     padding: 10px;
-    background-color: #b3926c;
+    opacity: 0.7;
 }
 
-.inicial {
-    background-color: yellow;
+.time-line:hover {
+    opacity: 1;
 }
 
 .ano {
-    background-color: blue;
+    background-color: #b47956;
+    color: #FFFFFF;
     padding: 10px;
 }
 
 .texto {
-    background-color: yellow;
-    padding: 10px;
+    background-color: #FFFFFF;
+    padding: 15px;
     height: auto;
+    text-align: justify;
+    transition: 0.4s;
+}
+
+.texto:hover {
+    font-size: 16px;
 }
 
 footer {
-    height: 300px;
+    display: flex;
+    justify-content: center;
+    /* background-color: #b47956; */
+    color: #FFFFFF;
+    padding: 10px;
 }
 
 
