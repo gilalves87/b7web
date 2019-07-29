@@ -1,0 +1,135 @@
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CABEÇALHO */
+header {
+    display: flex;
+    background-color: #eeeeee;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+header .foto img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin: 20px;
+}
+
+header .frase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header .frase #autor {
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* CORPO */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+section .titulo {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+section .texto {
+    text-align: justify;
+    padding: 20px;
+}
+
+h4 {
+    margin-bottom: 0.83em;
+}
+
+p { 
+    text-indent: 1.5em; 
+    margin-bottom: 0.83em;
+    text-align: justify;
+    background-color: lightgreen;
+    
+}
+
+
+section .texto2 {
+    margin: 10px;
+    padding: 10px;
+    display: none;
+}
+
+.titulo-biografia {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #eeeeee;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: all .5s linear;
+}
+
+#check:checked ~ .texto2 {
+    display: block;
+}
+
+#check {
+    display: none;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #eeeeee;
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width:700px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .foto img {
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
+    }
+
+    header .frase {
+        font-size: 25px;
+    }
+
+    header .frase #autor {
+        font-size: 15px;
+        padding: 10px;
+
+    }
+
+}
