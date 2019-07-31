@@ -73,22 +73,34 @@ p {
         
 }
 
-
 section .texto2 {
     margin: 10px;
     padding: 10px;
     display: none;
+    transition: all .5s;
 }
 
 .titulo-biografia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    text-align: center;
     padding: 10px;
     background-color: #eeeeee;
     margin-top: 20px;
     text-transform: uppercase;
-    transition: all .5s linear;
+    cursor: pointer;
 }
+
+.titulo-biografia:hover {
+    background-color: #dddddd;
+}
+
+.simbolo {
+    padding-right: 20px;
+    font-size: 25px;
+}
+
 
 #check:checked ~ .texto2 {
     display: block;
@@ -108,6 +120,35 @@ footer {
     margin-bottom: 10px;
 }
 
+.btn-voltar {
+    display: none;
+    z-index: 10;
+    position: fixed;
+    bottom: 4%;
+    right: 3%;
+    width: 130px;
+    height: 50px;
+    background-color: #eeeeee;
+    border-radius: 6px;
+}
+
+.btn-voltar-link {
+    text-decoration: none; 
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 0.8em;
+    cursor: pointer;    
+    border-radius: 6px;
+}
+
+.btn-voltar-link:hover {
+    background-color: #dddddd;
+}
 
 @media (max-width:700px) {
     header {

@@ -7,10 +7,19 @@
     <title>Renato Russo</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
-    <script src="js/functions.js"></script>
+    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="assets/js/functions.js"></script>
 </head>
 <body>
+    <!-- botao voltar para cima -->
+    <div class="btn-voltar jbtn-voltar">
+        <a class="btn-voltar-link jbtn-voltar-link" href="">
+            <!-- <img src="assets/img/seta-cima.png" width="40px" alt=""> -->
+            Voltar ao topo
+        </a>
+    </div>
     <main>
+
         <header>
             <div class="foto">
                 <img src="assets/img/Renato_Russo.png" alt="">
@@ -42,7 +51,11 @@
                     </p>
             </div>
             <input type="checkbox" name="check" id="check">
-            <label class="titulo-biografia" for="check">Biografia</label>
+            <label class="titulo-biografia" for="check" onclick="mudarIcone()"> 
+                <div class="simbolo" >+</div>
+                <div class="txt-titulo">Biografia</div>
+            </label>
+            
             <div class="texto2">
                     <h4>Ascendência</h4>
                     <p>
