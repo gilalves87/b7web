@@ -90,26 +90,24 @@ section .banner {
 .banner-headline {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     width: 900px;
     margin-top: 200px;
 }
 
 .banner-headline h1 {
     display: flex;
-    justify-content: flex-start;
-    width: 300px;
+    justify-content: center;
+    width: 250px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .banner-headline p {
     display: flex;
     justify-content: center;
-    text-align: justify;
-    width: 300px;
+    width: 250px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
 } 
 
 /* CONTENT */
