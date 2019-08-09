@@ -5,6 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* HEADER */
 header {
     display: flex;
     justify-content: center;
@@ -26,20 +27,55 @@ header .top-bar {
 
 nav ul {
     display: flex;
+    background-color: rgba(0, 0, 0, 1);
 }
 
 nav li {
     list-style: none;
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
     color: white;
+    transition: all .3s;
 }
 
+nav li:hover {
+    background-color: #ccc;
+    color: rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+    
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-mobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.menu-mobile:hover {
+    background-color: #ccc;
+}
+
+.menu-line {
+    height: 4px;
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+/* SECTION */
 section {
     display: flex;
     justify-content: center;
 }
 
+/* BANNER */
 section .banner {
     display: flex;
     flex-direction: column;
@@ -56,7 +92,7 @@ section .banner {
     flex-direction: column;
     justify-content: flex-start;
     width: 900px;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 .banner-headline h1 {
@@ -76,6 +112,7 @@ section .banner {
     background-color: rgba(0, 0, 0, 0.5);
 } 
 
+/* CONTENT */
 section .content {
     display: flex;
     justify-content: space-around;
@@ -109,7 +146,6 @@ section .content {
 }
 
 .content-card button {
-
     border: none;
     outline: 0;
     padding: 12px;
@@ -125,6 +161,7 @@ section .content {
     opacity: 0.7;
 }
 
+/* COMMENTS */
 section .comments {
     display: flex;
     justify-content: space-around;
@@ -153,10 +190,104 @@ section .comments {
     font-style: italic;
 }
 
-footer {
-    height: 400px;
+/* CONTACT */
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
 }
 
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #000000;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+}
+
+input[type=submit]:hover {
+    opacity: 0.7;
+}
+
+section .contact {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.contact fieldset {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(204, 204, 204, 0.3);
+    border: 1px solid rgba(204, 204, 204, 1);
+    border-radius: 5px;
+}
+
+legend {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid rgba(204, 204, 204, 1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+footer .address {
+    padding:20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+footer .copy {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+/* RESPONSIVENESS */
 @media (max-width:900px) {
     header .top-bar {
         width: 700px;
@@ -198,7 +329,29 @@ footer {
         width: 300px;
     }
 
-    .menu {
+    nav ul {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-align: center;
     }
+
+    .menu-mobile {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .col-25, .col-75 {
+        width: 100%;
+        margin-top: 0px;
+    }
+    
+    input[type=submit] {
+        width: 100%;
+    }
+
 }

@@ -6,6 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Landing Page</title>
+    <script>
+        window.onload = function(){
+            document.querySelector(".menu-mobile").addEventListener("click", function(){
+                if (document.querySelector(".menu nav ul").style.display == "flex") {
+                    document.querySelector(".menu nav ul").style.display = "none"
+                } else {
+                    document.querySelector(".menu nav ul").style.display = "flex"
+                }
+            })
+        }
+    
+    </script>
 </head>
 <body>
     <header>
@@ -18,10 +30,16 @@
 
             <div class="menu">
                 <nav>
+                    <div class="menu-mobile">
+                        <div class="menu-line"></div>
+                        <div class="menu-line"></div>
+                        <div class="menu-line"></div>
+                    </div>
                     <ul>
                         <li>Home</li>
                         <li>About</li>
                         <li>Comments</li>
+                        <li>Cart</li>
                     </ul>
                 </nav>
             </div>
@@ -119,8 +137,75 @@
 
     </section>
 
-    <footer>
+    <section>
 
+        <div class="contact">
+
+            <fieldset>
+
+                <legend>Send a Message</legend>
+
+                <form action="">
+                    
+                    <div class="row">
+                        
+                        <div class="col-25">
+                            <label for="fname">First Name</label>
+                        </div>
+                        
+                        <div class="col-75">
+                            <input type="text" name="firstname" id="fname" placeholder="Your name...">
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="row">
+                        
+                        <div class="col-25">
+                            <label for="email">E-mail</label>
+                        </div>
+                        
+                        <div class="col-75">
+                            <input type="text" name="email" id="email" placeholder="Your e-mail...">
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="row">
+                        
+                        <div class="col-25">
+                            <label for="msg">Message</label>
+                        </div>
+                        
+                        <div class="col-75">
+                            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+                    
+                </form>
+
+            </fieldset>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="address">
+            <p>
+                10732 Research Ave, Austin, TX
+
+                78759, USA
+            </p>
+        </div>
+        <div class="copy">
+            &copy; Todos os direitos reservados
+        </div>
 
 
     </footer>
