@@ -115,30 +115,41 @@ input:focus::placeholder {
 }
 
 footer {
-    right: 5px;
-    bottom: 10px;
+    right: 10px;
+    bottom: 20px;
     position: fixed;
 }
 
 .personalizar {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 18px;
+    box-shadow: 2px 2px 2px rgb(160, 160, 160);
 }
 
-.lapis {
-    background-color: lightgreen;
-    padding: 8px;
-    border-radius: 24px;
+.personalizar:hover {
+    background-color: rgba(240, 240, 240, 1);
 }
 
-@media screen and (max-width: 600px) {
+.personalizar .texto {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media (max-width: 600px) {
     .componentes {
-        width: 350px;
+        width: 380px;
     }
-
 }
 
-@media screen and (max-width: 350px) {
-    .componentes {
+@media (max-width: 500px) {
+    /* .componentes {
         width: 300px;
+    } */
+
+    .personalizar .texto {
+        display: none;
     }
 }
