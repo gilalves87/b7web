@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 8pt;
 }
@@ -14,34 +14,29 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    background-color: aqua;
 }
 
 nav ul {
     display: flex;
-    margin: 10px 15px;
+    align-items: center;
 }
 
 nav li {
     list-style: none;
-    padding: 20px;
-    background-color: royalblue;
+    padding: 10px;
 }
 
 nav li:hover {
     text-decoration: underline; 
 }
 
-nav li img {
-    padding: 2px;
+nav li i {
+    padding: 8px;
+    border-radius: 14px;
 }
 
-.menu-apps {
-    display: flex;
-    flex-direction: column;
-    background-color: #aaaaaa;
-    /* width: 30px;
-    height: 30px; */
+nav li i:hover {
+    background-color: rgba(240, 240, 240,1);
 }
 
 section {
