@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 8pt;
 }
@@ -14,28 +14,33 @@ header {
 nav {
     display: flex;
     justify-content: center;
+    height: 60px;;
 }
 
 nav ul {
     display: flex;
+    justify-content: space-around;
     align-items: center;
+    /* background-color: aquamarine; */
 }
 
 nav li {
+    margin: 8px;
     list-style: none;
-    padding: 10px;
+    /* background-color: lightcoral; */
+    border-radius: 20px;
 }
 
 nav li:hover {
     text-decoration: underline; 
 }
 
-nav li i {
+li img {
     padding: 8px;
-    border-radius: 14px;
+    border-radius: 20px;
 }
 
-nav li i:hover {
+li img:hover {
     background-color: rgba(240, 240, 240,1);
 }
 
@@ -51,10 +56,10 @@ section {
     justify-content: center;
     margin: 15px;
     width: 500px;
-    padding: 13px 18px;
+    padding: 8px 12px;
     border: 1px solid #eeeeee;
     border-radius: 25px;
-    box-shadow: 2px 2px 2px #eeeeee;
+    box-shadow: 2px 2px 2px #dddddd;
 }
 
 .componentes img {
@@ -109,10 +114,27 @@ input:focus::placeholder {
     font-size: 10pt;
 }
 
+footer {
+    right: 5px;
+    bottom: 10px;
+    position: fixed;
+}
+
+.personalizar {
+    display: flex;
+}
+
+.lapis {
+    background-color: lightgreen;
+    padding: 8px;
+    border-radius: 24px;
+}
+
 @media screen and (max-width: 600px) {
     .componentes {
         width: 350px;
     }
+
 }
 
 @media screen and (max-width: 350px) {
