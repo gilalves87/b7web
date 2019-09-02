@@ -3,7 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 8pt;
+    font-size: 12pt;
 }
 
 header {
@@ -12,12 +12,168 @@ header {
     padding: 10px;
 }
 
+.topo1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .logo {
     width: 100px;
     height: 33px;
-    padding: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
     background-image: url("../img/google-logo-1.png");
     background-size: cover;
     background-position: center;
 
+}
+
+.componentes-pesquisa {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #dddddd;
+    width: 600px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.componentes-pesquisa:hover {
+    box-shadow: 2px 2px 3px #dddddd;
+}
+
+input {
+    width: 500px;
+    border: none;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.menu-app-base {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    padding: 5px;
+}
+
+.menu-app-base:hover {
+    background-color: #dddddd;
+}
+
+.menu-app {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/menu-app.png  ");
+    background-size: cover;
+}
+
+.topo2 {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #dddddd;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 5px;
+    font-size: 8pt;
+}
+
+nav li:hover {
+    color: blue;
+}
+
+nav li img {
+    margin-right: 2px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-top: 30px;
+}
+
+.titulo {
+    margin-bottom: 5px;
+}
+
+.titulo a {
+    font-size: 14pt;
+    text-decoration: none;
+    color: rgb(0, 0, 170);
+}
+
+.titulo a:hover {
+    text-decoration: underline;
+}
+
+.link p {
+    color: rgb(67, 90, 61);
+    font-size: 10pt;
+    margin-bottom: 3px;
+}
+
+.resumo p {
+    font-size: 10pt;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(242, 242, 242);
+    width: 100%;
+    height: 80px;
+}
+
+.address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8pt;
+    border-bottom: 1px solid #dddddd;
+    height: 40px;
+}
+
+.others {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.others ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8pt;
+    margin: 10px;
+}
+
+.others li {
+    list-style: none;
+    font-size: 8pt;
+    padding: 10px;
+    cursor: pointer;
 }
