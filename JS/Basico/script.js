@@ -57,6 +57,20 @@ function listarNumeros() {
             document.getElementById("listaNumeros").innerHTML = lista
         }
     }
+}
 
-    
+function validarNum() {
+    let num = prompt("Informe um número: ")
+
+    switch (num) {
+        case "0":
+            alert("X é igual a 0")
+            break
+        case "1":
+            alert("X é igual a 1")
+            break
+        default:
+            alert("Ok! Siga sua vida!")
+            break
+    }
 }
