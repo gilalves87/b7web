@@ -17,3 +17,31 @@ function mouseSaiuDeCima() {
 function moveuMouse() {
     console.log("Mouse foi movido!")
 }
+
+function clicou() {
+    console.log("Clicou")
+}
+
+function botaoDireito() {
+    console.log("Botão direito")
+    return false
+}
+
+function cliqueDuplo() {
+    console.log("Clique duplo")
+}
+
+// EVENTOS TECLADO
+function apertouTecla(event) {
+    console.log("Apertou tecla: " + event.keyCode)
+}
+
+function soltouTecla(event) {
+    console.log("Soltou tecla: " + event.keyCode)
+}
+
+function pressionouTecla(event) {
+    if(event.shiftKey == true && event.keyCode == 69) {
+        console.log("Pressionou tecla shift + E ")
+    }
+}
