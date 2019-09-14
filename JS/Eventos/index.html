@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h3>Eventos de Mouse</h3>
+
+    <button onmousedown="apertouMouse()" onmouseup="soltouMouse()" onmouseover="mouseEmCima()" onmouseout="mouseSaiuDeCima()" onmousemove="moveuMouse()">Eu sou um botão</button>
+
+    <button onclick="clicou()">onclick</button>
+    <button oncontextmenu="return botaoDireito()">oncontextmenu</button>
+    <p>
+        <button ondblclick="cliqueDuplo()">ondblclick</button>
+    </p>
+
+    <hr>
+
+    <h3>Eventos de Teclado</h3>
+
+    <p>
+        <input type="text" onkeydown="apertouTecla(event)" onkeyup="soltouTecla(event)" onkeypress="pressionouTecla(event)">
+    </p>
+</body>
+</html>
