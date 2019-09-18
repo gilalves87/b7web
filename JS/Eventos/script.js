@@ -45,3 +45,21 @@ function pressionouTecla(event) {
         console.log("Pressionou tecla shift + E ")
     }
 }
+
+// Eventos de página
+function carregou() {
+    alert("Página carregada!")
+}
+
+// Eventos de formulário
+function mudouOpcao(cidade) {
+    console.log("Selecionou: " + cidade.value)
+}
+
+function focou() {
+    console.log("Focou no campo 1")
+}
+
+function desfocou() {
+    console.log("Desfocou do campo 1")
+}
