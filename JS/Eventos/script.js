@@ -46,6 +46,14 @@ function pressionouTecla(event) {
     }
 }
 
+function digitou(e){
+    if(e.keyCode == 13 && e.ctrlKey == true){ // Se Crtl + Entrer for pressionado
+        texto = document.getElementById("campo").value
+
+        console.log(texto)
+    }
+}
+
 // Eventos de página
 function carregou() {
     alert("Página carregada!")
