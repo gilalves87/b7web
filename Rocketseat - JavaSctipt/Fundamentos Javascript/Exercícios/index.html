@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercícios Módulo 01</title>
+</head>
+<body onload="retornaEndereco()">
+
+    <script>
+        // Exercício 01
+        var endereco = {
+            rua: "Rua dos Pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            uf: "SP"
+        }
+        
+        function retornaEndereco() {
+            document.write('O usuário mora em ' + endereco.cidade + ' / ' + endereco.uf + ', no bairro ' + endereco.bairro + ', na rua ' + endereco.rua + ' com o nº ' + endereco.numero);
+        }
+
+        // Exercício 02
+        function pares(x, y) {
+            for(var i = x; i <= y; i++) {
+                if(i % 2 == 0) {
+                    document.write(i);
+                }
+            }
+        }
+
+        var resultado = pares(32, 321);
+    </script>
+</body>
+</html>
