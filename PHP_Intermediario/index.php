@@ -1,4 +1,4 @@
-<?php
+<?php   
     echo "<p><strong> FOR </strong></p>";
     $x = 1;
     while($x <= 10) {
