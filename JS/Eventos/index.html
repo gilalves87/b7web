@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eventos</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body onload="carregou()">
     <h3>Eventos de Mouse</h3>
@@ -24,6 +25,7 @@
 
     <p>
         <input type="text" onkeydown="apertouTecla(event)" onkeyup="soltouTecla(event)" onkeypress="pressionouTecla(event)">
+        <input type="text" onkeyup="digitou(event)" id="campo">
     </p>
 
     <hr>
@@ -49,5 +51,12 @@
             <input type="submit" value="Enviar">
         </p>
     </form>
+
+    <hr>
+
+    <h3>mudança de Estilos</h3>
+
+    <h1 id="titulo" class="vermelho oculto">Vamos estudar Javascript!!</h1>
+
 </body>
 </html>

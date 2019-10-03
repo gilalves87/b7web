@@ -44,7 +44,6 @@ function estourar(elemento) {
     
 }
 
-
 function iniciar() {
     setInterval(addBola, 1000)
 }
