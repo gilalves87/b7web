@@ -92,3 +92,8 @@ function limpar() {
     document.getElementById("titulo").classList.remove('vermelho');
     document.getElementById("titulo").classList.remove('verde');
 }
+
+function mostrarTelefone(elemento) {
+    document.getElementById("telefone").style.display = "block";
+    elemento.style.display = "none";
+}

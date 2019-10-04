@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eventos</title>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="carregou()">
@@ -22,45 +21,56 @@
     <hr>
 
     <h3>Eventos de Teclado</h3>
-
+    
     <p>
         <input type="text" onkeydown="apertouTecla(event)" onkeyup="soltouTecla(event)" onkeypress="pressionouTecla(event)">
         <input type="text" onkeyup="digitou(event)" id="campo">
     </p>
-
+    
     <hr>
-
+    
     <h3>Eventos de Fonrmulário</h3>
-
+    
     <form action="" method="post" onsubmit="return false">
-        <p>
-            <input type="text" name="nome" onfocus="focou()" onblur="desfocou()">
-        </p>
+            <p>
+                <input type="text" name="nome" onfocus="focou()" onblur="desfocou()">
+            </p>
+            
+            <p>
+                <select name="cidade" onchange="mudouOpcao(this)">
+                        <option value="">Selecione...</option>
+                        <option value="Belo Horizonte">Belo Horizonte</option>
+                        <option value="Santa Catarina">Santa Catarina</option>
+                        <option value="Maceió">Maceió</option>
+                        <option value="Curitiba">Curitiba</option>
+                    </select>
+                </p>
+                
+                <p>
+                    <input type="submit" value="Enviar">
+                </p>
+            </form>
+            
+            <hr>
+            
+            <h3>mudança de Estilos</h3>
+            
+            <h1 id="titulo">Seja bem vindo(a)!</h1>
+            
+            <button onclick="azul()">Azul</button>
+            <button onclick="vermelho()">Vermelho</button>
+            <button onclick="verde()">Verde</button>
 
-        <p>
-            <select name="cidade" onchange="mudouOpcao(this)">
-                <option value="">Selecione...</option>
-                <option value="Belo Horizonte">Belo Horizonte</option>
-                <option value="Santa Catarina">Santa Catarina</option>
-                <option value="Maceió">Maceió</option>
-                <option value="Curitiba">Curitiba</option>
-            </select>
-        </p>
+            <hr>
+            
+            <p>
+                <div id="telefone">99999999999</div>
+                
+                <button onclick="mostrarTelefone(this)">Mostrar Telefone</button>
+            </p>
 
-        <p>
-            <input type="submit" value="Enviar">
-        </p>
-    </form>
-
-    <hr>
-
-    <h3>mudança de Estilos</h3>
-
-    <h1 id="titulo">Seja bem vindo(a)!</h1>
-
-    <button onclick="azul()">Azul</button>
-    <button onclick="vermelho()">Vermelho</button>
-    <button onclick="verde()">Verde</button>
-
-</body>
-</html>
+            
+            
+            <script src="script.js"></script>
+        </body>
+        </html>

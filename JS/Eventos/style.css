@@ -12,3 +12,7 @@
     background-color: #00ff00;
     color: #fff;
 }
+
+#telefone {
+    display: none;
+}
