@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <style>
+        div {
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+
+        #myDiv {
+            transform: rotate(20deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Este é um elemento div normal.
+    </div>
+
+    <div id="myDiv">
+        Este elemento div é girado no sentido horário 20 graus.
+    </div>
+
+    <button onclick="abrirJanela()">Abrir nova janela</button>
+
+    <script>
+        function abrirJanela() {
+            window.open();
+        }
+    </script>
+
+</body>
+</html>

@@ -61,7 +61,7 @@
     echo "<hr>";
     echo "<p><strong> FUNÇÕES MATEMÁTICAS </strong></p>";
 
-    echo "Absoluto de 10 é ".abs(10);
+    echo "Absoluto de -10 é ".abs(-10);
     echo "<br>";
     echo "O arredondamento de 5.99 é ".round(5.99); 
     echo "<br>";

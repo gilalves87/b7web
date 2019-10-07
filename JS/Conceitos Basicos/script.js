@@ -97,3 +97,53 @@ function mostrarTelefone(elemento) {
     document.getElementById("telefone").style.display = "block";
     elemento.style.display = "none";
 }
+
+// ARRAY
+let alimentos = [
+    ["Maça", "Laranja", "Mamão", "Manga"],
+    ["Arroz", "Feijão", "Milho"]
+];
+
+console.log(alimentos[1][1]);
+
+let carros = [
+    'Palio',
+    'Uno',
+    'Corolla',
+    'Ferrari'
+];
+
+// FUNÇÕES DENTRO DE UMA ARRAY
+let carro = {
+    nome: 'Fiat',
+    modelo: 'Uno',
+    peso: '800kg',
+    ligado: false,
+    ligar: function(){
+        console.log("Ligando o "+this.modelo);
+        console.log("Vrum vrum!!");
+        this.ligado = true;
+    },
+    acelerar: function() {
+        if (this.ligado == true){
+            console.log("Riiiihiii");
+        } else {
+            console.log(this.nome+" "+this.modelo+" não está ligado!");
+        }
+    }
+};
+
+console.log("Modelo: "+carro.modelo);
+
+carro.ligar();
+carro.acelerar();
+
+// OBJETOS DENTRO DE UMA ARRAY
+let veiculos = [
+    {nome:'Fiat', modelo:'Palio'},
+    {nome:'Fiat', modelo:'Uno'},
+    {nome:'Toyota', modelo:'Corolla'},
+    {nome:'Ferrari', modelo:'Spider'}
+];
+
+console.log(veiculos[2].nome+" "+veiculos[2].modelo);
