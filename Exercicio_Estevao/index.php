@@ -36,7 +36,7 @@ class DVD extends Produto {
     private $titulo;
     private $ano;
     // Método construtor da classe DVD
-    public function __construct($codigo, $preco, $titulo, $ano) {
+    function __construct($codigo, $preco, $titulo, $ano) {
         parent::__construct($codigo, $preco);
         $this->titulo = $titulo;
         $this->ano = $ano;
