@@ -131,6 +131,7 @@ $estoque = array(
     $leite6->getCodigo() => array($leite6->getMarca(),$leite6->getVolume(),$leite6->getDataValidade(),$leite6->getPreco())
 );
 
+// Verificando a data de validade
 $leite1->estaVencido($leite1->getDataValidade());
 $leite2->estaVencido($leite2->getDataValidade());
 $leite3->estaVencido($leite3->getDataValidade());
@@ -138,6 +139,7 @@ $leite4->estaVencido($leite4->getDataValidade());
 $leite5->estaVencido($leite5->getDataValidade());
 $leite6->estaVencido($leite6->getDataValidade());
 
+// Função para exibir as informações do array
 var_dump($estoque);
 
 ?>
