@@ -95,7 +95,6 @@ class Leite extends Produto implements iPerecivel {
 
     // Método da interface iPerecivel
     function estaVencido($dataValidade) {
-        $this->dataValidade = $dataValidade;
         if($this->dataValidade < date('d/m/Y')){
             echo "O leite {$this->marca} está vencido. <br />";
         } else {
